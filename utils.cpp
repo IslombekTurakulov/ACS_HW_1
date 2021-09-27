@@ -1,8 +1,6 @@
 //
 // Created by Turakulov Islombek on 26.09.2021.
 //
-
-#include <cstring>
 #include "utils.h"
 
 void initRand() {

@@ -6,6 +6,7 @@
 #define ACS_HW_1_UTILS_H
 
 #include <string>
+#include <cstdlib>
 
 void initRand();
 

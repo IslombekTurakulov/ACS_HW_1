@@ -1,5 +1,5 @@
 //
-// Created by Islombek on 27.09.2021.
+// Created by Turakulov Islombek on 27.09.2021.
 //
 
 #include "languages.h"
