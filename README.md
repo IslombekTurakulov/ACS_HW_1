@@ -5,8 +5,8 @@
 ### Входные данные
 Для успешной работы с программой необходимо соблюдать порядок ввода.
 ```
-functional abacab 35 true dynamic/strict    Нет!
-functional 1976 50 true dynamic/strict      Правильно!
+functional sdgfsdfsd abacab 35 true dynamic/strict    Нет!
+functional xcvxcv 1976 50 true dynamic/strict      Правильно!
 ```
 ### Комментарии
 Комментарии добавлены почти ко всем файлам для удобного ревью. Некоторые комментарии были поставлены рядом с кодом, а не над ним.
