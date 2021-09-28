@@ -1,6 +1,6 @@
-functional 1860 10 true dynamic
-functional 1970 50 false strict
-functional 2020 70 true dynamic
-functional 1864 40 true dynamic
-functional fdds 10 sdfds dsfds
-functional 1910 0 true strict
+functional c# 1860 10 true dynamic
+functional c++ 1970 50 false strict
+functional c++ 2020 70 true dynamic
+functional c 1864 40 true dynamic
+functional assembler fdds 10 sdfds dsfds
+functional kotlin 1910 0 true strict

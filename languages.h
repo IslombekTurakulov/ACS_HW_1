@@ -14,7 +14,7 @@ struct languages {
     enum key {
         FUNCTIONAL, OBJECT_ORIENTED, PROCEDURAL
     };
-    key key;
+    key k;
     union {
         functional func;
         objectOriented obj;

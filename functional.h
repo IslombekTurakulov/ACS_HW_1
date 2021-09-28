@@ -9,6 +9,7 @@
 #include <string>
 
 struct functional {
+    const char *name;
     uint64_t age;
     uint64_t popularity;
     bool lazy_calculation;

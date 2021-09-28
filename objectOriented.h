@@ -10,6 +10,7 @@
 #include <string>
 
 struct objectOriented {
+    const char *name;
     uint64_t age;
     uint64_t popularity;
     enum legacy {

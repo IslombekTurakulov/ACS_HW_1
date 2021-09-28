@@ -7,8 +7,10 @@
 
 void In(objectOriented &obj, std::ifstream &stream) {
     std::string legacy_input;
-    stream >> obj.age >> obj.popularity;
+    std::string name_temp;
+    stream >> name_temp >> obj.age >> obj.popularity;
     stream >> legacy_input;
+    obj.name = copyElementFromString(name_temp);
     if (legacy_input == "single") {
         obj.legacy_type = obj.SINGLE;
     } else if (legacy_input == "multiple") {
@@ -21,6 +23,7 @@ void In(objectOriented &obj, std::ifstream &stream) {
 }
 
 void InRandom(objectOriented &obj) {
+    obj.name = randomWord(randomInteger(4,10));
     obj.age = randomInteger(1950, 2021);
     obj.popularity = randomInteger(0, 100);
     int kind = randomInteger(1, 3);
@@ -34,10 +37,10 @@ void InRandom(objectOriented &obj) {
 }
 
 void Out(objectOriented &obj, std::ofstream &stream) {
-    stream << "Object Oriented:" << " popularity = " << obj.popularity << "%"
+    stream << "Object Oriented:" << " name = " << obj.name << " popularity = " << obj.popularity << "%"
            << ", age = " << obj.age << ", legacy = " << obj.legacy_type << "\n";
 }
 
 double Quotient(objectOriented &obj) {
-    return static_cast<double>(obj.age) / static_cast<double>(strlen("Object Oriented"));
+    return static_cast<double>(obj.age) / static_cast<double>(strlen(obj.name));
 }

@@ -45,6 +45,7 @@ int main(int argc, char *argv[]) {
             third_error_message(size);
             return 3;
         }
+
         srand(static_cast<unsigned int>(time(0)));
         InRnd(c, size);
     } else {

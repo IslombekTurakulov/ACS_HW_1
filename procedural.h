@@ -9,6 +9,7 @@
 #include <string>
 
 struct procedural {
+    const char *name;
     uint64_t age;
     uint64_t popularity;
     bool has_abstract_variables;

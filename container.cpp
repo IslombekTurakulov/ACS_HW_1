@@ -25,7 +25,7 @@ void Clear(container &c) {
 
 //------------------------------------------------------------------------------
 // Ввод содержимого контейнера из указанного потока
-// я решил игнорировать невалидные обьекты
+// я решил игнорировать невалидные объекты
 void In(container &c, std::ifstream &stream) {
     while (!stream.eof()) {
         if ((c.cont[c.len] = In(stream)) != 0) {
@@ -39,7 +39,7 @@ void In(container &c, std::ifstream &stream) {
 // InRnd по идее никогда не возвращает nullptr
 void InRnd(container &c, int size) {
     while (c.len < size) {
-        if ((c.cont[c.len] = reinterpret_cast<languages *>(rand() % 100 + 1)) != nullptr) {
+        if ((c.cont[c.len] = InRnd()) != nullptr) {
             c.len++;
         }
     }
@@ -67,7 +67,7 @@ void StraightSelectionSort(container &c) {
             }
         }
         // мы нашли индекс минимального не отсортированного элемента
-        std::swap(c.cont[i], c.cont[min_index]);
+        std::swap(c.cont[min_index], c.cont[i]);
         // устанавливаем минимум, на первую не отсортированную позицию тем самым делаем её сортирванной
     }
 }

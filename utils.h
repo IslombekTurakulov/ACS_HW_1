@@ -12,4 +12,8 @@ void initRand();
 
 int randomInteger(int min, int max);
 
+char *randomWord(int len);
+
+char *copyElementFromString(std::string &str);
+
 #endif //ACS_HW_1_UTILS_H
