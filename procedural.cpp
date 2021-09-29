@@ -17,15 +17,16 @@ void In(procedural &procedural, std::ifstream &stream) {
 }
 
 void InRandom(procedural &procedural) {
-    procedural.name = randomWord(randomInteger(5,10));
+    procedural.name = randomWord(randomInteger(5, 10));
     procedural.age = randomInteger(1940, 2021);
     procedural.popularity = randomInteger(0, 100);
     procedural.has_abstract_variables = randomInteger(0, 1) == 0;
 }
 
 void Out(procedural &procedural, std::ofstream &stream) {
-    stream << "Procedural: "<< "name = " << procedural.name << " popularity = " << procedural.popularity << "%" << ", age = " << procedural.age
-           << ", has abstract variables = " << procedural.has_abstract_variables << "\n";
+    stream << "Procedural: " << "name = " << procedural.name << " popularity = " << procedural.popularity << "%"
+           << ", age = " << procedural.age
+           << ", has abstract variables = " << (procedural.has_abstract_variables ? "TRUE" : "FALSE") << "\n";
 }
 
 double Quotient(procedural &obj) {

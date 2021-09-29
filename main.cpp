@@ -1,5 +1,8 @@
 #include <iostream>
+#include <cstdlib> // для функций rand() и srand()
+#include <ctime>   // для функции time()
 #include <cstring>
+
 #include "utils.h"
 #include "container.h"
 
@@ -24,20 +27,20 @@ void third_error_message(int size) {
               << size
               << ". Set 0 < number <= 10000\n";
 }
+int main(int argc, char* argv[]) {
 
-int main(int argc, char *argv[]) {
-    if (argc != 5) {
+    if(argc != 5) {
         first_error_message();
         return 1;
     }
 
-    std::cout << "Start" << std::endl;
+    std::cout << "Start"<< std::endl;
     container c{};
     Init(c);
 
-    if (!strcmp(argv[1], "-f")) {
-        std::ifstream in_stream(argv[2]);
-        In(c, in_stream);
+    if(!strcmp(argv[1], "-f")) {
+        std::ifstream stream(argv[2]);
+        In(c, stream);
     } else if (!strcmp(argv[1], "-n")) {
         auto size = std::atoi(argv[2]);
 

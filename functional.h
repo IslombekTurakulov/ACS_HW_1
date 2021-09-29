@@ -1,18 +1,18 @@
 //
 // Created by Islombek on 27.09.2021.
 //
-
-#ifndef ACS_HW_1_FUNCTIONAL_H
-#define ACS_HW_1_FUNCTIONAL_H
+#ifndef __functional__
+#define __functional__
 
 #include <fstream>
 #include <string>
+#include <cstring>
 
 struct functional {
     const char *name;
-    uint64_t age;
-    uint64_t popularity;
     bool lazy_calculation;
+    int age;
+    int popularity;
     enum typing {DYNAMIC, STRICT, ERROR};
     typing typing_type;
 };
@@ -33,4 +33,4 @@ void Out(functional &func, std::ofstream &stream);
 // вычисление функционального яп
 double Quotient(functional &func);
 
-#endif //ACS_HW_1_FUNCTIONAL_H
+#endif //__functional__

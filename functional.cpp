@@ -39,7 +39,7 @@ void Out(functional &func, std::ofstream &stream) {
     stream << "Functional: " << "name = " << func.name << " popularity = " << func.popularity << "%" << ", age = "
            << func.age
            << ", typing type = " << func.typing_type << ", lazy calculation = "
-           << func.lazy_calculation << "\n";
+           << (func.lazy_calculation ? "TRUE" : "FALSE") << "\n";
 }
 
 

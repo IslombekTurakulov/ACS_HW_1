@@ -3,6 +3,8 @@
 //
 
 #include "languages.h"
+#include "utils.h"
+#include <cstring>
 
 languages *In(std::ifstream &stream) {
     languages *lang = new languages;
@@ -17,7 +19,8 @@ languages *In(std::ifstream &stream) {
             delete lang;
             return nullptr;
         }
-    } else if (type_of_language == "object_oriented") {
+    }
+    else if (type_of_language == "object_oriented") {
         lang->k = languages::OBJECT_ORIENTED;
         In(lang->obj, stream);
         // Обработка невалидного объекта
@@ -25,7 +28,8 @@ languages *In(std::ifstream &stream) {
             delete lang;
             return nullptr;
         }
-    } else if (type_of_language == "procedural") {
+    }
+    else if (type_of_language == "procedural") {
         lang->k = languages::PROCEDURAL;
         In(lang->proc, stream);
     } else {
@@ -37,9 +41,9 @@ languages *In(std::ifstream &stream) {
 
 //------------------------------------------------------------------------------
 // инициализация случайного ЯП
-languages* InRnd() {
-    languages* lang;
-    auto type_of_language = randomInteger(1, 3);
+languages *InRnd() {
+    auto *lang = new languages;
+    auto type_of_language = randomInteger(1, 4);
 
     if (type_of_language % 3 == 0) {
         lang->k = languages::FUNCTIONAL;

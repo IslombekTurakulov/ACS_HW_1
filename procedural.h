@@ -2,16 +2,17 @@
 // Created by Islombek on 27.09.2021.
 //
 
-#ifndef ACS_HW_1_PROCEDURAL_H
-#define ACS_HW_1_PROCEDURAL_H
+#ifndef __procedural__
+#define __procedural__
 
 #include <fstream>
 #include <string>
+#include <cstring>
 
 struct procedural {
     const char *name;
-    uint64_t age;
-    uint64_t popularity;
+    int age;
+    int popularity;
     bool has_abstract_variables;
 };
 
@@ -31,4 +32,4 @@ void Out(procedural &procedural, std::ofstream &stream);
 // вычисление процедурного яп
 double Quotient(procedural &proc);
 
-#endif //ACS_HW_1_PROCEDURAL_H
+#endif //__procedural__

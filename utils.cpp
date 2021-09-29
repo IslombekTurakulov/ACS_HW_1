@@ -3,6 +3,7 @@
 //
 #include <cstring>
 #include "utils.h"
+#include <ctime>
 
 void initRand() {
     srand((unsigned) time(nullptr));

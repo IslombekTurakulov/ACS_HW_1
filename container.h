@@ -2,8 +2,8 @@
 // Created by Turakulov Islombek on 26.09.2021.
 //
 
-#ifndef ACS_HW_1_CONTAINER_H
-#define ACS_HW_1_CONTAINER_H
+#ifndef __container__
+#define __container__
 
 #include "languages.h"
 #include <cstdlib>
@@ -39,4 +39,4 @@ void Out(container &c, std::ofstream &stream);
 // Вычисление суммы периметров всех фигур в контейнере
 void StraightSelectionSort(container &c);
 
-#endif //ACS_HW_1_CONTAINER_H
+#endif //__container__

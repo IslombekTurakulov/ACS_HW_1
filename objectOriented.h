@@ -2,8 +2,8 @@
 // Created by Turakulov Islombek on 27.09.2021.
 //
 
-#ifndef ACS_HW_1_OBJECTORIENTED_H
-#define ACS_HW_1_OBJECTORIENTED_H
+#ifndef __objectoriented__
+#define __objectoriented__
 
 
 #include <fstream>
@@ -11,8 +11,8 @@
 
 struct objectOriented {
     const char *name;
-    uint64_t age;
-    uint64_t popularity;
+    int age;
+    int popularity;
     enum legacy {
         SINGLE, MULTIPLE, INTERFACE, ERROR
     };
@@ -36,4 +36,4 @@ void Out(objectOriented &obj, std::ofstream &stream);
 double Quotient(objectOriented &obj);
 
 
-#endif //ACS_HW_1_OBJECTORIENTED_H
+#endif //__objectoriented__

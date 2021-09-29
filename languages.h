@@ -1,14 +1,15 @@
 //
-// Created by Islombek on 27.09.2021.
+// Created by Turakulov Islombek on 27.09.2021.
 //
 
-#ifndef ACS_HW_1_LANGUAGES_H
-#define ACS_HW_1_LANGUAGES_H
+#ifndef __languages__
+#define __languages__
 
 #include "functional.h"
 #include "objectOriented.h"
 #include "procedural.h"
 #include "utils.h"
+#include <string>
 
 struct languages {
     enum key {
@@ -41,4 +42,4 @@ void Out(languages &lang, std::ofstream &stream);
 double Quotient(languages &lang);
 
 
-#endif //ACS_HW_1_LANGUAGES_H
+#endif //__languages__

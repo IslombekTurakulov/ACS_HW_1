@@ -2,8 +2,8 @@
 // Created by Turakulov Islombek on 26.09.2021.
 //
 
-#ifndef ACS_HW_1_UTILS_H
-#define ACS_HW_1_UTILS_H
+#ifndef __utils__
+#define __utils__
 
 #include <string>
 #include <cstdlib>
@@ -16,4 +16,4 @@ char *randomWord(int len);
 
 char *copyElementFromString(std::string &str);
 
-#endif //ACS_HW_1_UTILS_H
+#endif //__utils__

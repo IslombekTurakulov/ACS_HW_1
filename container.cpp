@@ -28,7 +28,7 @@ void Clear(container &c) {
 // я решил игнорировать невалидные объекты
 void In(container &c, std::ifstream &stream) {
     while (!stream.eof()) {
-        if ((c.cont[c.len] = In(stream)) != 0) {
+        if ((c.cont[c.len] = In(stream)) != nullptr) {
             c.len++;
         }
     }

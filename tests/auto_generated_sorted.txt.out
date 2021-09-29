@@ -1,0 +1,22 @@
+Sorted container:
+Container contains 20 elements.
+0: Functional: name = YoYlM2uwWx popularity = 99%, age = 1975, typing type = 2, lazy calculation = TRUE
+1: Object Oriented: name = m6EEsYZtUl popularity = 19%, age = 1976, legacy = SINGLE
+2: Functional: name = x04mVg85UN popularity = 8%, age = 2008, typing type = 1, lazy calculation = TRUE
+3: Object Oriented: name = J3XxUkNnFI popularity = 43%, age = 2017, legacy = INTERFACE
+4: Object Oriented: name = 9UaDPUg7hn popularity = 94%, age = 2017, legacy = MULTIPLE
+5: Object Oriented: name = LFUROGMmi popularity = 94%, age = 1978, legacy = MULTIPLE
+6: Object Oriented: name = ES6yQrV01 popularity = 23%, age = 2019, legacy = INTERFACE
+7: Object Oriented: name = kTBJZbZt popularity = 64%, age = 1985, legacy = INTERFACE
+8: Procedural: name = NpiZwEo popularity = 60%, age = 1952, has abstract variables = FALSE
+9: Object Oriented: name = Ey64Zzr popularity = 11%, age = 1973, legacy = MULTIPLE
+10: Object Oriented: name = nfELuI popularity = 51%, age = 1966, legacy = INTERFACE
+11: Object Oriented: name = 73IPNS popularity = 31%, age = 1999, legacy = SINGLE
+12: Object Oriented: name = pgQdr popularity = 62%, age = 1952, legacy = INTERFACE
+13: Procedural: name = gfDxO popularity = 14%, age = 1954, has abstract variables = FALSE
+14: Functional: name = WxVZf popularity = 33%, age = 1981, typing type = 2, lazy calculation = TRUE
+15: Procedural: name = 5cO1F popularity = 0%, age = 1987, has abstract variables = FALSE
+16: Procedural: name = WpyXP popularity = 88%, age = 2003, has abstract variables = FALSE
+17: Object Oriented: name = BpG4 popularity = 96%, age = 1957, legacy = INTERFACE
+18: Object Oriented: name = FTke popularity = 81%, age = 1962, legacy = SINGLE
+19: Object Oriented: name = k8xJ popularity = 30%, age = 1991, legacy = MULTIPLE
