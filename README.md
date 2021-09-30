@@ -6,8 +6,8 @@
 ### Входные данные
 Для успешной работы с программой необходимо соблюдать порядок ввода.
 ```
-functional sdgfsdfsd abacab 35 true dynamic/strict    Нет!
-functional xcvxcv 1976 50 true dynamic/strict      Правильно!
+object_oriented qweqw sdfs 12 multiple      Нет!
+object_oriented qweqw 1999 65 multiple      Правильно!
 ```
 ### Комментарии
 Комментарии добавлены почти ко всем файлам для удобного ревью. Некоторые комментарии были поставлены рядом с кодом, а не над ним.
