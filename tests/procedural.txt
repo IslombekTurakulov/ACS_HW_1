@@ -1,6 +1,6 @@
-procedural sdfsd 1996 25 true
-procedural reter 2005 52 false
-procedural vbnbvn 2352 66 true
-procedural hgjgh 1996 66 true
-procedural ghfhgf 1875 65 false
-procedural vcbvc 2015 76 false
+procedural sdfsd 1996 25 0
+procedural reter 2005 52 1
+procedural vbnbvn 2352 66 0
+procedural hgjgh 1996 66 0
+procedural ghfhgf 1875 65 1
+procedural vcbvc 2015 76 1

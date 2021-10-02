@@ -13,7 +13,9 @@ struct functional {
     bool lazy_calculation;
     int age;
     int popularity;
-    enum typing {DYNAMIC, STRICT, ERROR};
+    enum typing {
+        DYNAMIC, STRICT, ERROR
+    };
     typing typing_type;
 };
 

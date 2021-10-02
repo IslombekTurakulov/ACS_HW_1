@@ -1,4 +1,4 @@
-Sorted container:
+Input container:
 Container contains 3 elements.
 0: Functional: name = asd popularity = 14%, age = 32, typing type = STRICT, lazy calculation = TRUE age / name.len() = 10.6667.
 1: Functional: name = asytryd popularity = 14%, age = 1234, typing type = STRICT, lazy calculation = FALSE age / name.len() = 176.286.

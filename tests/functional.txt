@@ -1,5 +1,5 @@
-functional c 1860 10 true dynamic
-functional c 1970 50 false strict
-functional c 2020 70 true dynamic
-functional c 1864 40 true dynamic
-functional kotlin 1910 0 true strict
+functional asd cvbcv asd 1 1
+functional asytryd 1234 14 0 1
+functional ds 435 14 1 2
+functional ytry dsfsd sdfsd 0 3
+functional gjf 754 14 0 1

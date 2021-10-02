@@ -27,20 +27,26 @@ void third_error_message(int size) {
               << size
               << ". Set 0 < number <= 10000\n";
 }
-int main(int argc, char* argv[]) {
 
-    if(argc != 5) {
+int main(int argc, char *argv[]) {
+
+    if (argc != 5) {
         first_error_message();
         return 1;
     }
 
-    std::cout << "Start"<< std::endl;
-    container c{};
-    Init(c);
+    std::cout << "Start" << std::endl;
+    container container{};
+    Init(container);
 
-    if(!strcmp(argv[1], "-f")) {
+    if (!strcmp(argv[1], "-f")) {
         std::ifstream stream(argv[2]);
-        In(c, stream);
+        if (stream.is_open())
+            In(container, stream);
+        else {
+            std::cout << "Can't find this file!" << "\n";
+            return 1;
+        }
     } else if (!strcmp(argv[1], "-n")) {
         auto size = std::atoi(argv[2]);
 
@@ -49,8 +55,10 @@ int main(int argc, char* argv[]) {
             return 3;
         }
 
+        // системные часы в качестве инициализатора
         srand(static_cast<unsigned int>(time(0)));
-        InRnd(c, size);
+        // Заполнение контейнера генератором случайных чисел
+        InRnd(container, size);
     } else {
         second_error_message();
         return 2;
@@ -58,13 +66,13 @@ int main(int argc, char* argv[]) {
 
     std::ofstream of_stream(argv[3]);
     of_stream << "Input container:\n";
-    Out(c, of_stream);
+    Out(container, of_stream);
 
     std::ofstream out_stream(argv[4]);
-    StraightSelectionSort(c);
+    StraightSelectionSort(container);
     out_stream << "Sorted container:\n";
-    Out(c, out_stream);
-    Clear(c);
+    Out(container, out_stream);
+    Clear(container);
     std::cout << "Stop" << std::endl;
     return 0;
 }

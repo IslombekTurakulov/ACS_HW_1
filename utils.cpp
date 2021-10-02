@@ -35,8 +35,6 @@ char *randomWord(int len) {
 char *copyElementFromString(std::string &str) {
     // Zero terminated string
     char *result = new char[str.length() + 1];
-
     std::memcpy(result, str.c_str(), str.length() + 1);
-
     return result;
 }

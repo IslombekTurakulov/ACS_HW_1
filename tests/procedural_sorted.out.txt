@@ -1,0 +1,8 @@
+Input container:
+Container contains 6 elements.
+0: Procedural: name = sdfsd popularity = 25%, age = 1996, has abstract variables = TRUE age / name.len() = 399.2.
+1: Procedural: name = reter popularity = 52%, age = 2005, has abstract variables = FALSE age / name.len() = 401.
+2: Procedural: name = vbnbvn popularity = 66%, age = 2352, has abstract variables = TRUE age / name.len() = 392.
+3: Procedural: name = hgjgh popularity = 66%, age = 1996, has abstract variables = TRUE age / name.len() = 399.2.
+4: Procedural: name = ghfhgf popularity = 65%, age = 1875, has abstract variables = FALSE age / name.len() = 312.5.
+5: Procedural: name = vcbvc popularity = 76%, age = 2015, has abstract variables = FALSE age / name.len() = 403.

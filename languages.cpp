@@ -4,14 +4,14 @@
 
 #include "languages.h"
 #include "utils.h"
-#include <cstring>
 
 languages *In(std::ifstream &stream) {
-    languages *lang = new languages;
-    std::string type_of_language;
+    languages *lang;
+    char type_of_language[100];
     stream >> type_of_language;
 
-    if (type_of_language == "functional") {
+    if (!strcmp(type_of_language, "functional")) {
+        lang = new languages;
         lang->k = languages::FUNCTIONAL;
         In(lang->func, stream);
         // Обработка невалидного объекта
@@ -19,8 +19,8 @@ languages *In(std::ifstream &stream) {
             delete lang;
             return nullptr;
         }
-    }
-    else if (type_of_language == "object_oriented") {
+    } else if (!strcmp(type_of_language, "object_oriented")) {
+        lang = new languages;
         lang->k = languages::OBJECT_ORIENTED;
         In(lang->obj, stream);
         // Обработка невалидного объекта
@@ -28,11 +28,12 @@ languages *In(std::ifstream &stream) {
             delete lang;
             return nullptr;
         }
-    }
-    else if (type_of_language == "procedural") {
+    } else if (!strcmp(type_of_language, "procedural")) {
+        lang = new languages;
         lang->k = languages::PROCEDURAL;
         In(lang->proc, stream);
     } else {
+        lang = new languages;
         delete lang;
         return nullptr;
     }
@@ -73,7 +74,7 @@ void Out(languages &t, std::ofstream &stream) {
 
 
 //------------------------------------------------------------------------------
-// вычисление оптимального времени, для транспорта
+// вычисление year / name.len()
 double Quotient(languages &lang) {
     if (lang.k == languages::FUNCTIONAL) {
         return Quotient(lang.func);
