@@ -2,6 +2,7 @@
 // Created by Turakulov Islombek on 27.09.2021.
 //
 #include <cstring>
+#include <iostream>
 #include "objectOriented.h"
 #include "utils.h"
 
@@ -10,6 +11,13 @@ void In(objectOriented &obj, std::ifstream &stream) {
     std::string name_temp;
     stream >> name_temp >> obj.age >> obj.popularity >> legacy_input;
     obj.name = copyElementFromString(name_temp);
+    // Дополнительная проверка на отрицательные числа!
+    if (obj.popularity < 0 || obj.popularity > 100) {
+        obj.popularity = randomInteger(1, 80);
+    }
+    if (obj.age < 1945 || obj.age > INT32_MAX) {
+        obj.age = randomInteger(1945, 2021);
+    }
     if (legacy_input == 0) {
         obj.legacy_type = obj.SINGLE;
     } else if (legacy_input == 1) {
@@ -39,7 +47,7 @@ void Out(objectOriented &obj, std::ofstream &stream) {
     stream << "Object Oriented:" << " name = " << obj.name << " popularity = " << obj.popularity << "%"
            << ", age = " << obj.age << ", legacy = "
            << (obj.legacy_type == 0 ? "SINGLE" : obj.legacy_type == 1 ? "MULTIPLE" : obj.legacy_type == 2 ? "INTERFACE"
-           : "ERROR");
+                                                                                                          : "ERROR");
     stream << " age / name.len() = " << Quotient(obj) << ".\n";
 }
 

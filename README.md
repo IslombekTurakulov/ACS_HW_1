@@ -58,3 +58,40 @@ _После размещения данных в контейнер необх
    общий размер исходных текстов, полученный размер исполняемого кода (если он формируется),
    время выполнения программы для различных тестовых наборов данных.
    ```
+
+## Описание структуры
+```
+|        |   |
+|--------|---|
+| int    | 4 |
+| char   | 1 |
+| double | 8 |
+| bool   | 1 |
+
+| struct object_oriented                                            |  [112]  | struct procedural           |  [109]  | struct functional                                  |  [112]    |
+|-------------------------------------------------------------------|---------|-----------------------------|---------|----------------------------------------------------|-----------|
+| char name                                                         | 100 [0] | char name                   | 100 [0] | char name                                          | 100 [0]   |
+| int age                                                           | 4 [100] | int age                     | 4 [100] | int age                                            | 4 [100]   |
+| int popularity                                                    | 4 [104] | int popularity              | 4 [104] | int popularity                                     | 4 [104]   |
+| enum legacy(single 4[0],multiple 4[0],interface 4[0],error 4[0])  | 4 [108] | bool has_abstract_variables | 1 [108] | enum typing(dynamic 4[0], strict 4[0], error 4[0]) | 4 [108]   |
+|                                                                   |         |                             |         |                                                    |           |
+| languages                                                         | [116]   |                             |         | enum container::max_len                            | 4 [0]     |
+| key k                                                             | 4 [0]   |                             |         | container                                          | 10004     |
+| union (procedural [109], object_oriented [112], functional [112]) | 112 [4] |                             |         | language *container[max_len]                       | 10000 [4] |
+
+Заметим! В таблицы прописаны нули и единицы, что логично 0 - ложь, а 1 - истина. 
+
+| main(..)            |            | Stack | Heap |
+|---------------------|------------|-------|------|
+| int argc            | 4 [0]      | 1     | 0    |
+| char *argvc         | 8 [4]      | 1     | 1    |
+| container container | 10004 [12] | 1     | 1    |
+| int size            | 4 [10016]  | 1     | 0    |
+| InRandom()          | 8          | 1     | 0    |
+| languages *lang     | 8 [0]      | 1     | 1    |
+| int i               | 4 [0]      | 1     |      |
+| int j               | 4 [4]      | 1     |      |
+| int k               | 4 [8]      | 1     |      |
+| StraightSorting()   | 20         | 1     | 0    |
+|                     |            |       |      |
+```

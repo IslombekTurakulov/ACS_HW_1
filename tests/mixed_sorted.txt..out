@@ -1,0 +1,14 @@
+Sorted container:
+Container contains 12 elements.
+0: Object Oriented: name = object_oriented1 popularity = 32%, age = 1980, legacy = MULTIPLE age / name.len() = 123.75.
+1: Object Oriented: name = object_oriented4 popularity = 34%, age = 1980, legacy = MULTIPLE age / name.len() = 123.75.
+2: Object Oriented: name = object_oriented3 popularity = 0%, age = 1990, legacy = SINGLE age / name.len() = 124.375.
+3: Object Oriented: name = object_oriented6 popularity = 0%, age = 1990, legacy = SINGLE age / name.len() = 124.375.
+4: Object Oriented: name = object_oriented5 popularity = 32%, age = 1991, legacy = INTERFACE age / name.len() = 124.438.
+5: Object Oriented: name = object_oriented2 popularity = 23%, age = 1991, legacy = INTERFACE age / name.len() = 124.438.
+6: Functional: name = Funclang2 popularity = 0%, age = 1946, typing type = STRICT, lazy calculation = TRUE age / name.len() = 216.222.
+7: Functional: name = Funclang1 popularity = 34%, age = 1946, typing type = STRICT, lazy calculation = FALSE age / name.len() = 216.222.
+8: Procedural: name = ProcLang3 popularity = 24%, age = 1951, has abstract variables = FALSE age / name.len() = 216.778.
+9: Procedural: name = ProcLang4 popularity = 41%, age = 1952, has abstract variables = TRUE age / name.len() = 216.889.
+10: Functional: name = FuncLang4 popularity = 0%, age = 1952, typing type = STRICT, lazy calculation = TRUE age / name.len() = 216.889.
+11: Functional: name = FuncLang3 popularity = 0%, age = 1954, typing type = STRICT, lazy calculation = FALSE age / name.len() = 217.111.

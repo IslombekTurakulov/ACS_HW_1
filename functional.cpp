@@ -5,11 +5,19 @@
 #include "functional.h"
 #include "utils.h"
 #include <cstring>
+#include <iostream>
 
 void In(functional &func, std::ifstream &stream) {
-    int typing_type;
+    int typing_type = 0;
     std::string name_temp;
     stream >> name_temp >> func.age >> func.popularity >> func.lazy_calculation >> typing_type;
+    // Дополнительная проверка на отрицательные числа!
+    if (func.popularity < 0 || func.popularity > 100) {
+        func.popularity = randomInteger(1, 80);
+    }
+    if (func.age < 1945 || func.age > INT32_MAX) {
+        func.age = randomInteger(1946, 2021);
+    }
     func.name = copyElementFromString(name_temp);
     if (typing_type == 0) {
         func.typing_type = func.DYNAMIC;
@@ -19,6 +27,7 @@ void In(functional &func, std::ifstream &stream) {
         func.typing_type = func.ERROR;
     }
 }
+
 
 void InRandom(functional &func) {
     func.name = randomWord(randomInteger(4, 10));
@@ -37,7 +46,8 @@ void InRandom(functional &func) {
 void Out(functional &func, std::ofstream &stream) {
     stream << "Functional: " << "name = " << func.name << " popularity = " << func.popularity << "%" << ", age = "
            << func.age
-           << ", typing type = " << (func.typing_type == 0 ? "DYNAMIC" : func.typing_type == 1 ? "STRICT" : "ERROR") << ", lazy calculation = "
+           << ", typing type = " << (func.typing_type == 0 ? "DYNAMIC" : func.typing_type == 1 ? "STRICT" : "ERROR")
+           << ", lazy calculation = "
            << (func.lazy_calculation ? "TRUE" : "FALSE");
     stream << " age / name.len() = " << Quotient(func) << ".\n";
 }

@@ -41,6 +41,7 @@ int main(int argc, char *argv[]) {
 
     if (!strcmp(argv[1], "-f")) {
         std::ifstream stream(argv[2]);
+        // Проверка на существование файла, если файл не существует, выбросится предупреждение.
         if (stream.is_open())
             In(container, stream);
         else {
