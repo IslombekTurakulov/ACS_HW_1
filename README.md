@@ -5,8 +5,8 @@
 ### Входные данные
 Для успешной работы с программой необходимо соблюдать порядок ввода.
 ```
-functional sdgfsdfsd abacab 35 true 0    Нет!
-functional xcvxcv 1976 50 true 1      Правильно!
+functional sdgfsdfsd abacab 35 1 0    Нет!
+functional xcvxcv 1976 50 1 1      Правильно!
 ```
 
 ## Условие задачи
